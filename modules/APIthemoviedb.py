@@ -4,7 +4,7 @@ import json
 def get_actors():
   """Obtiene una lista de todos los actores de TheMovieDatabase."""
 
-  headers = {"Authorization": "0cf8bcf44c54573b1364140cd12ac30f"}
+  headers = {"Authorization": ""}
   response = requests.get("https://api.themoviedb.org/3/person/popular?language=es-ES", headers=headers)
   if response.status_code == 200:
     data = json.loads(response.content)
