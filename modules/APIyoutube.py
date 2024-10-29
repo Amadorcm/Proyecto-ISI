@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 
 def obtener_trailer(nombre_pelicula):
     # Crea una instancia de la API de YouTube
-    youtube_api = build('youtube', 'v3', developerKey='AIzaSyCnhYcwC1FaQmxQVLQr2J48ufkCsbV4P68')
+    youtube_api = build('youtube', 'v3', developerKey='')
     
     # Realiza una búsqueda en YouTube con el nombre de la película y el término "trailer"
     resultado_busqueda = youtube_api.search().list(q=f'{nombre_pelicula} trailer', part='id', maxResults=1).execute()
