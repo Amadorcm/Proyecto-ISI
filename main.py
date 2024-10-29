@@ -17,7 +17,7 @@ def index():
 def buscar():
     # Obtener los datos del formulario
     termino_busqueda = request.form.get('termino_busqueda')
-    api_key = "0cf8bcf44c54573b1364140cd12ac30f"
+    api_key = ""
     # Ejecutar el script de Python y obtener los resultados
     if(termino_busqueda == "" ):
         return render_template('error.html')
